@@ -73,6 +73,8 @@ alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also t
 alias vc='code' # gui code editor
 alias web='cd /home/pedro/Documents/Projects/app-web'
 alias core='cd /home/pedro/Documents/Projects/app-core'
+alias lava='cd /home/pedrofff/Documents/Lava-Jato-UI'
+alias pal='cd /home/pedrofff/Documents/Palinoteca-Virtual-Mel-front'
 
 # Directory navigation shortcuts
 alias ..='cd ..'
