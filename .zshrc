@@ -5,7 +5,8 @@ ZSH=/usr/share/oh-my-zsh/
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # List of plugins used
-plugins=()
+plugins=(    zsh-autosuggestions  zsh-syntax-highlighting)
+
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -71,8 +72,8 @@ alias pa='$aurhelper -Ss' # list available package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code' # gui code editor
-alias web='cd /home/pedro/Documents/Projects/app-web'
-alias core='cd /home/pedro/Documents/Projects/app-core'
+alias web='cd /home/pedrofff/Documents/Projects/app-web'
+alias core='cd /home/pedrofff/Documents/Projects/app-core'
 alias lava='cd /home/pedrofff/Documents/Lava-Jato-UI'
 alias pal='cd /home/pedrofff/Documents/Palinoteca-Virtual-Mel-front'
 
@@ -92,8 +93,8 @@ alias mkdir='mkdir -p'
 # Display Pokemon
 #pokemon-colorscripts --no-title -r 1,3,6
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source <(fzf --zsh)
 alias docker-seeder="docker-compose exec app php artisan migrate:fresh && docker-compose exec app php artisan db:seed --class TestingAppWebSeeder && docker-compose exec app php artisan app:suser-sprite"
 
