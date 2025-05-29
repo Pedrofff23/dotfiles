@@ -1,7 +1,13 @@
-/*
+# Ignore everything
+*
 /*/
+
+# Allow these specific files/folders
 !.gitignore
-!.config/
-.config/*
-!.config/nvim
 !.zshrc
+
+# Allow the .config folder and its contents
+!.config/
+!.config/hypr/
+!.config/hypr/** 
+
