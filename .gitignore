@@ -5,6 +5,7 @@
 # Allow these specific files/folders
 !.gitignore
 !.zshrc
+!.env.example
 
 # Allow the .config folder and its contents
 !.config/
