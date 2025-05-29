@@ -107,4 +107,4 @@ export GOPROXY=direct
 # fastfetch --logo-type kitty
 
 # Fastfetch with gifs
- kitten icat -n --align left ~/Downloads/drag.gif | fastfetch --raw -
+ kitten icat -n --align left ~/.config/fastfetch/gifs/drag.gif | fastfetch --raw -
