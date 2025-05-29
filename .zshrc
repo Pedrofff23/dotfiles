@@ -72,10 +72,14 @@ alias pa='$aurhelper -Ss' # list available package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code' # gui code editor
+
 alias web='cd /home/pedro/Documents/Work/app-web'
 alias core='cd /home/pedro/Documents/Work/app-core'
-alias lava='cd /home/pedrofff/Documents/Projects/Lava-Jato-UI'
+alias lava='cd /home/pedrofff/Documents/Projects/lava-jato-clone'
 alias pal='cd /home/pedrofff/Documents/Projects/Palinoteca-Virtual-Mel-front'
+alias grep='grep --color'
+alias g=git
+alias vim=nvim
 
 # Directory navigation shortcuts
 alias ..='cd ..'
@@ -92,7 +96,6 @@ alias mkdir='mkdir -p'
 
 # Display Pokemon
 #pokemon-colorscripts --no-title -r 1,3,6
-export PATH="$PATH:$(go env GOPATH)/bin"
 
 #source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -101,6 +104,8 @@ alias docker-seeder="docker-compose exec app php artisan migrate:fresh && docker
 
 # Get variables form .env file
 export $(grep -v '^#' ~/.env | xargs)
+export EDITOR=nvim
+export PATH="$PATH:$(go env GOPATH)/bin"
 export GOPROXY=direct
 
 # Fastfetch with just images
