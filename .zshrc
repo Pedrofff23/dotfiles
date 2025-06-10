@@ -73,13 +73,14 @@ alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code' # gui code editor
 
-alias web='cd /home/pedro/Documents/Work/app-web'
-alias core='cd /home/pedro/Documents/Work/app-core'
+alias core='cd /home/pedrofff/Documents/Work/cloud-cafe-core'
+alias jules='cd /home/pedrofff/Documents/Work/teste'
 alias lava='cd /home/pedrofff/Documents/Projects/lava-jato-clone'
 alias pal='cd /home/pedrofff/Documents/Projects/Palinoteca-Virtual-Mel-front'
+
 alias grep='grep --color'
 alias g=git
-alias vim=nvim
+alias v=nvim
 
 # Directory navigation shortcuts
 alias ..='cd ..'

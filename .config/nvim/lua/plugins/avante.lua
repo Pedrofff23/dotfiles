@@ -4,13 +4,13 @@ return {
   version = false, -- Never set this value to "*"! Never!
   opts = {
     provider = "openai", -- Make sure no other provider is being used
-    openai = {
-      endpoint = "https://api.groq.com/openai/v1",
-      model = "meta-llama/llama-4-scout-17b-16e-instruct",
-      timeout = 30000,
-      temperature = 0,
-      max_completion_tokens = 8192,
-      api_key_name = "OPENAI_API_KEY",
+    providers = {
+      openai = {
+        endpoint = "https://api.groq.com/openai/v1",
+        model = "meta-llama/llama-4-scout-17b-16e-instruct",
+        temperature = 0,
+        max_completion_tokens = 8192,
+      },
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`

@@ -2,7 +2,8 @@ return {
   {
     "https://gitlab.com/schrieveslaach/sonarlint.nvim.git",
     lazy = true,
-    ft = { "typescriptreact" },
+    event = "BufReadPre",
+    ft = { "typescriptreact", "go" },
     config = function()
       require("sonarlint").setup({
         server = {
